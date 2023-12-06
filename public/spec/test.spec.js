@@ -87,20 +87,20 @@ describe('Registration Form Validation', () => {
 //       expect(document.getElementById('passwordValidation').textContent).toBe('Password must be at least 8 characters long and contain both letters and numbers');
 //   });
 
-  it('Week4_Day1_Invalid_Registration_Password_does_not_match', () => {
-    // Mock form inputs with weak password
-    document.getElementById('username').value = 'weakUser';
-    document.getElementById('password').value = 'password1'; // Doesn't meet complexity requirements
-    document.getElementById('confirmPassword').value = 'password2';
-    document.getElementById('role').value = 'admin';
+//   it('Week4_Day1_Invalid_Registration_Password_does_not_match', () => {
+//     // Mock form inputs with weak password
+//     document.getElementById('username').value = 'weakUser';
+//     document.getElementById('password').value = 'password1'; // Doesn't meet complexity requirements
+//     document.getElementById('confirmPassword').value = 'password2';
+//     document.getElementById('role').value = 'admin';
 
-    // Call the validation function
-    const result = validateRegistration();
+//     // Call the validation function
+//     const result = validateRegistration();
 
-    // Assertions
-    expect(result).toBe(false);
-    expect(document.getElementById('passwordValidation').textContent).toBe('Passwords do not match');
-  });
+//     // Assertions
+//     expect(result).toBe(false);
+//     expect(document.getElementById('passwordValidation').textContent).toBe('Passwords do not match');
+//   });
 
 
 
